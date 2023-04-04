@@ -1,14 +1,21 @@
 function hasTargetSum(array, target) {
-  // Write your algorithm here
+  for(let t = 0; t< array.length; t++) {
+    const result = target-array[t];
+    for (let r = t+1; r<array.length; r++) {
+    if (array[r] === result) return true;}
+
+  }
+  return false;
 }
 
 /* 
   Write the Big O time complexity of your function here
-*/
+//using nested interation with a linear of o(n) to iterate through each element within the shortest time.
 
 /* 
   Add your pseudocode here
-*/
+//iterate through earch array, check if sum of any two of the arrays can fit the target the return true.
+//continue to iterate untill a desired response is achieved.
 
 /*
   Add written explanation of your solution here
